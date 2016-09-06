@@ -1,0 +1,33 @@
+/********************************************************
+	BAZA
+*********************************************************/
+
+* {
+/*	border:1px solid red;
+*/}
+
+html {
+  	box-sizing: border-box;
+}
+*, *:before, *:after {
+  	box-sizing: inherit;
+}
+
+body, html {
+	padding:0;
+	margin:0;
+	background:white;
+	font-size:18px;
+	font-family: 'Montserrat', sans-serif;
+	color:#454545;
+}
+
+.wrapper_center {
+	margin:0 auto;
+	max-width:1000px;
+}
+
+a {
+	text-decoration:none;
+	color:#454545;
+}
