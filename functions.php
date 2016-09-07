@@ -44,7 +44,7 @@ function remove_menus(){										// 	Usuwanie itemów z menu admina
 	remove_menu_page('edit-comments.php');						//- komentarze
 	//remove_menu_page('edit.php');								//- wpisy
 
-	if(wp_get_current_user()->user_login != 'jakub.kuranda'){		// Schowaj elementy jeśli user to nie dualjack ( autor strony)
+	if(wp_get_current_user()->user_login != 'dualjack'){		// Schowaj elementy jeśli user to nie dualjack ( autor strony)
 		remove_menu_page('pods');								//- Pods
 		remove_menu_page('edit.php?post_type=acf');				//- ACF
 	}
@@ -87,8 +87,8 @@ add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
 // PODS
 // ==============================
 
-// function remove_pods_shortcode_button () {	// Usuwanie przycisku shortcode w frontendzie
-//     remove_action( 'media_buttons', array( PodsInit::$admin, 'media_button' ), 12 );
-// }
+function remove_pods_shortcode_button () {	// Usuwanie przycisku shortcode w frontendzie
+    remove_action( 'media_buttons', array( PodsInit::$admin, 'media_button' ), 12 );
+}
 
-// add_action( 'admin_init', 'remove_pods_shortcode_button', 14 );
+add_action( 'admin_init', 'remove_pods_shortcode_button', 14 );
