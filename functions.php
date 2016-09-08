@@ -38,7 +38,7 @@ function enqueue_scripts(){
 // USTAWIENIA WORDPRESSA
 // ==============================
 
-add_filter('show_admin_bar', '__return_false');				//	schowaj belkę admina
+//add_filter('show_admin_bar', '__return_false');				//	schowaj belkę admina
 
 function remove_menus(){										// 	Usuwanie itemów z menu admina
 	remove_menu_page('edit-comments.php');						//- komentarze
