@@ -1,10 +1,12 @@
 <?php setup_postdata($post = get_post(11));?>
 
 <menu>
-	<div class="wrapper wrapper_center">
+	<div class="wrapper body_center body_pad">
 		
 		<a class="logo" href="/">
-			<img src="<?php the_field('logo');?>">
+			<span class="elem_1">Fundacja</span>
+			<span class="elem_line"></span>
+			<span class="elem_2">pro Arte et Studio</span>
 		</a>
 
 		<ul class="main_menu">

@@ -10,9 +10,9 @@
 $DEV = TRUE;	// czy w fazie testów?
 
 if($DEV){
-	$version = date('d-m_H:i');
+	$GLOBALS['version'] = date('d.m_H:i');
 } else {
-	$version = "1.0";
+	$GLOBALS['version'] = "1.0";
 }
 
 //	=====================
@@ -22,23 +22,23 @@ add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 add_action( 'admin_enqueue_scripts', 'enqueue_admin_styles' );
 
 function enqueue_styles(){
-	wp_enqueue_style( 'core', get_template_directory_uri() . '/css/style.css', false, $version );
+	wp_enqueue_style( 'core', get_template_directory_uri() . '/css/style.css', array(), $GLOBALS['version'], false );
 }
 
 function enqueue_admin_styles(){
-    wp_enqueue_style( 'admin', get_template_directory_uri() . '/css/admin.css', false, $version );
+    wp_enqueue_style( 'admin', get_template_directory_uri() . '/css/admin.css', array(), $GLOBALS['version'], false );
 }
 
 function enqueue_scripts(){
 	wp_enqueue_script( 'jquery-3.0.0', get_template_directory_uri() . '/js/jquery-3.0.0.min.js', false );
-    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', false, $version );
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), $GLOBALS['version'], false );
 }
 
 // ==============================
 // USTAWIENIA WORDPRESSA
 // ==============================
 
-//add_filter('show_admin_bar', '__return_false');				//	schowaj belkę admina
+add_filter('show_admin_bar', '__return_false');				//	schowaj belkę admina
 
 function remove_menus(){										// 	Usuwanie itemów z menu admina
 	remove_menu_page('edit-comments.php');						//- komentarze
