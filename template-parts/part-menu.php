@@ -23,5 +23,12 @@
 
 		</ul>
 
+		<div class="social">
+			
+			<a href="" class="icon mail"></a>
+			<a href="" class="icon fb"></a>
+
+		</div>
+
 	</div>
 </menu>
