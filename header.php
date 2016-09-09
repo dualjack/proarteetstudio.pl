@@ -17,12 +17,11 @@
     <meta name="twitter:description"    content="" />
     <meta name="twitter:image"          content="" />
 
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
+    <!-- == WORDPRESS == --> 
     
     <?php wp_head(); ?>
+
+    <!-- == ========= == --> 
 
 </head>
 
