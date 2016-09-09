@@ -1,9 +1,14 @@
 <?php setup_postdata($post = get_post(14));?>
 
-<div class="frontpage_body">
-	
+<div class="frontpage_body body_center max_width_3">
+
+	<div class="right">
+
+		<div class="photo" style="background-image: url('<?php the_field('photo');?>')"></div>
+
+	</div>
+
 	<div class="left">
-		<div class="wrapper">
 		
 			<div class="tile">
 				<a href="">
@@ -24,13 +29,6 @@
 					podopieczni
 				</a>
 			</div>
-
-		</div>
-	</div>
-
-	<div class="right">
-
-		<div class="photo" style="background-image: url('<?php the_field('photo');?>')"></div>
 
 	</div>
 
