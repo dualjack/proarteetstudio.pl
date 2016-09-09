@@ -1,3 +1,3 @@
-<?php
-
-require locate_template('template-parts/footer-main.php');
+    <?php wp_footer();?>
+    </body>
+</html>
