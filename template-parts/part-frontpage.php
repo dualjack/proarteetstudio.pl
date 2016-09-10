@@ -10,25 +10,45 @@
 
 	<div class="left">
 		
-			<div class="tile">
-				<a href="">
-					Chcę pomóc
-				</a>
-			</div>
+		<?php while(have_rows('seg_1_buttons')):the_row();?>
 
-			<div class="tile">
-				<a href="">
-					Potrzebuję<br/>
-					wsparcia
-				</a>
-			</div>
+		<div class="tile">
+			<a href="<?php the_sub_field('url');?>">
+				<?php the_sub_field('title');?>
+			</a>
+		</div>
 
-			<div class="tile">
-				<a href="">
-					Nasi mali<br/>
-					podopieczni
-				</a>
-			</div>
+		<?php endwhile;?>
+
+	</div>
+
+</div>
+
+<div class="frontpage_seg_2 body_center max_width_3">
+	
+	<div class="left">
+		<div class="desc">
+			
+			Nasi przyjaciele<br/>
+			i partnerzy
+
+		</div>
+	</div>
+
+	<div class="right">
+		
+		<?php while(have_rows('seg_2_logos')):the_row();?>
+
+		<div class="tile">
+			<a href="<?php the_sub_field('url');?>">
+
+				<?php $img = get_sub_field('logo');?>
+				<img src="<?php echo $img['sizes']['thumbnail'];?>">
+
+			</a>
+		</div>
+
+		<?php endwhile;?>
 
 	</div>
 
