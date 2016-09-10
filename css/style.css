@@ -188,34 +188,34 @@ menu > .wrapper > .social > a.icon.fb {
 	FRONTPAGE
 *********************************************************/
 
-.frontpage_body {
+.frontpage_seg_1 {
 	display:flex;
 	flex-direction:row-reverse;
 	flex-wrap:wrap;
 }
 
-.frontpage_body > div {
+.frontpage_seg_1 > div {
 	
 }
 
 
 
 
-.frontpage_body > .left {
+.frontpage_seg_1 > .left {
 	flex-grow:1;
 	flex-basis:30%;
 	display:flex;
 	flex-direction:column;
 }
 
-.frontpage_body > .left > .tile {
+.frontpage_seg_1 > .left > .tile {
 	flex-grow:1;
 	display:flex;
 	justify-content:center;
 	padding:20px;
 }
 
-.frontpage_body > .left > .tile > a {
+.frontpage_seg_1 > .left > .tile > a {
 	display:block;
 	padding:30px 40px;
 	font-size:16px;
@@ -227,20 +227,34 @@ menu > .wrapper > .social > a.icon.fb {
 	transition:all 500ms;
 }
 
-.frontpage_body > .left > .tile > a:hover {
+.frontpage_seg_1 > .left > .tile > a:hover {
 	color:rgba(254, 52, 4, 1);
 	border:1px solid rgba(254, 52, 4, 1);
 }
 
+.frontpage_seg_1 > .left > .tile.partners_desc {
+
+}
+
+.frontpage_seg_1 > .left > .tile.partners_desc > span {
+	font-size:14px;
+	display:block;
+	padding:30px 40px;
+	margin:auto;
+	text-transform:uppercase;
+	padding:40px;
+	color:white;
+}
 
 
 
-.frontpage_body > .right {
+
+.frontpage_seg_1 > .right {
 	flex-grow:1;
 	flex-basis:70%;
 }
 
-.frontpage_body > .right > .photo {
+.frontpage_seg_1 > .right > .photo {
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:top center;

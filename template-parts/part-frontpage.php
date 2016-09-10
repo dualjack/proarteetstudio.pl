@@ -1,6 +1,6 @@
 <?php setup_postdata($post = get_post(14));?>
 
-<div class="frontpage_body body_center max_width_3">
+<div class="frontpage_seg_1 body_center max_width_3">
 
 	<div class="right">
 
