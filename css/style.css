@@ -200,17 +200,15 @@ footer > .wrapper {
 }
 
 footer > .wrapper > .tile {
-	padding:20px 30px;
-}
-
-footer > .wrapper > .tile + .tile {
-	border-right:rgba(255,255,255,0.5);
+	padding:20px;
+	margin:20px 30px;
 }
 
 footer > .wrapper > .tile p {
 	font-size:13px;
 	font-weight:300;
 	color:white;
+	padding:0;
 }
 
 
