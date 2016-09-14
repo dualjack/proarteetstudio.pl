@@ -1,7 +1,7 @@
 <?php setup_postdata($post = get_post(11));?>
 
 <menu>
-	<div class="wrapper body_center body_pad">
+	<div class="wrapper body_center body_pad max_width_3">
 		
 		<a class="logo" href="/">
 			<span class="elem_1">Fundacja</span>

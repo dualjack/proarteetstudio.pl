@@ -63,7 +63,7 @@ function remove_admin_bar_links() {
     //$wp_admin_bar->remove_menu('site-name');       			// Remove the site name menu
     //$wp_admin_bar->remove_menu('view-site');       			// Remove the view site link
     $wp_admin_bar->remove_menu('updates');         				// Remove the updates link
-    $wp_admin_bar->remove_menu('customize');          			// Remove the customize link
+    //$wp_admin_bar->remove_menu('customize');          			// Remove the customize link
     $wp_admin_bar->remove_menu('comments');         			// Remove the comments link
     $wp_admin_bar->remove_menu('new-content');      			// Remove the content link
     $wp_admin_bar->remove_menu('themes');      					// Remove the themes link
