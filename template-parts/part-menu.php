@@ -32,3 +32,5 @@
 
 	</div>
 </menu>
+
+<?php wp_reset_postdata();?>

@@ -1,4 +1,4 @@
-<?php
+<?php /* Template Name: Aktualności */
 
 get_header();
 

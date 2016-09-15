@@ -6,8 +6,8 @@
 @import 'https://fonts.googleapis.com/css?family=Courgette';
 
 * {
-	border:1px solid red;
-}
+/*	border:1px solid red;
+*/}
 
 html {
   	box-sizing: border-box;
