@@ -5,7 +5,8 @@
 
 		<div class="right">
 
-			<div class="photo" style="background-image: url('<?php the_field('photo');?>')"></div>
+			<?php $image = get_field('seg_1_photo');?>
+			<div class="photo" style="background-image: url('<?php echo $image['sizes']['banner'];?>')"></div>
 
 		</div>
 

@@ -77,7 +77,7 @@ add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
 // ROZMIARY OBRAZKÓW
 // ==============================
 
-//add_image_size('slider', 1600, 360, array( 'center', 'center' ));					//	obraz slajdu
+add_image_size('banner', 900, 500, array( 'center', 'center' ));					//	obraz slajdu
 
 // ==============================
 // ADVANCED CUSTOM FIELDS
