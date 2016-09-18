@@ -17,8 +17,13 @@ $wp_query = new WP_Query(array(
 		setup_postdata($post);?>
 
 		<div class="post">
-			<a class="title" href="<?php the_permalink();?>"><?php the_title();?></a>
-			<div class="time"><?php echo get_the_date()?></div>
+
+			<div class="head">
+				<a class="title" href="<?php the_permalink();?>"><?php the_title();?></a>
+				<br/>
+				<a class="time" href="<?php the_permalink();?>"><?php echo get_the_date()?></a>
+			</div>
+			
 			<div class="excerpt">
 				<?php if(false){
 					the_excerpt();
