@@ -233,7 +233,7 @@ footer > .wrapper > .tile p {
 
 .frontpage_seg_1 > .wrapper > .left {
 	flex-grow:1;
-	flex-basis:30%;
+	flex-basis:20%;
 	display:flex;
 	flex-direction:column;
 }
@@ -390,7 +390,7 @@ footer > .wrapper > .tile p {
 .posts_archive_1 .post > .excerpt {
 	font-size:16px;
 	line-height:35px;
-	color:black;
+	color:#404040;
 	padding:10px 0;
 }
 
@@ -553,6 +553,7 @@ footer > .wrapper > .tile p {
 .single_post_content .content {
 	font-size:16px;
 	line-height:25px;
+	color:#404040;
 }
 
 .back_to_all {
@@ -562,3 +563,8 @@ footer > .wrapper > .tile p {
 	font-weight:bold;
 	color:#4d9900;
 }
+
+
+/********************************************************
+	FLEXIBLE CONTENT PAGE
+*********************************************************/
