@@ -73,6 +73,14 @@ function remove_admin_bar_links() {
 
 add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
 
+function post_settings(){
+
+    add_theme_support( 'post-thumbnails', array( 'post' ) );          // Posts only
+    
+}
+
+add_action( 'after_setup_theme', 'post_settings' );
+
 // ==============================
 // ROZMIARY OBRAZKÓW
 // ==============================

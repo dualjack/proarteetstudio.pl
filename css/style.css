@@ -343,7 +343,7 @@ footer > .wrapper > .tile p {
 
 
 /********************************************************
-	FRONTPAGE
+	POSTS ARCHIVE
 *********************************************************/
 
 .posts_archive_1 {
@@ -434,4 +434,67 @@ footer > .wrapper > .tile p {
 
 .pagination > .page-numbers.current {
 	background-color:#5C5340;
+	cursor:default;
+}
+
+/********************************************************
+	LOCALISATOR
+*********************************************************/
+
+.localisator {
+	margin:20px 0;
+}
+
+.localisator > .wrapper {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:flex-end;
+}
+
+.localisator .left {
+	background-color:#a2c945;
+	padding:0 30px;
+	flex:1;
+}
+
+.localisator .left > .segment {
+	display:inline-block;
+	line-height:80px;
+	font-size:18px;
+	color:#262626;
+}
+
+.localisator .left > .segment + .segment {
+	padding-left:80px;
+	background-image:url('../img/keyboard-right-arrow-button.png');
+	background-position:left 30px center;
+	background-repeat:no-repeat;
+}
+
+.localisator .left > .segment.base {
+	color:#6b2e2e;
+}
+
+.localisator .left > .segment.sub {
+	
+}
+
+
+
+
+.localisator .right {
+	margin-left:20px;
+}
+
+.localisator .right > .print_button {
+	display:block;
+	width:80px;
+	height:80px;
+	background-color:#c98745;
+	background-image:url('../img/printer-tool2.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	border:none;
+	margin:0;
+	cursor:pointer;
 }
