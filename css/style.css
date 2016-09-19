@@ -568,3 +568,58 @@ footer > .wrapper > .tile p {
 /********************************************************
 	FLEXIBLE CONTENT PAGE
 *********************************************************/
+
+.page_flex_wysiwyg {
+	font-size:16px;
+	line-height:25px;
+	color:#404040;
+}
+
+.page_flex_gallery {
+
+}
+
+.page_flex_gallery > .wrapper {
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+
+.page_flex_gallery > .wrapper > .tile {
+	margin:10px 0;
+}
+
+.page_flex_gallery > .wrapper > .tile > .image {
+	display:block;
+}
+
+/********************************************************
+	SOCIAL LINK
+*********************************************************/
+
+.social_link {
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	padding:50px 20px;
+}
+
+.social_link .icon {
+	display:block;
+	width:32px;
+	height:32px;
+	background-size:cover;
+	margin:0 15px;
+}
+
+.social_link .icon.fb {
+	background-image:url('../img/facebook.png');
+}
+
+.social_link .icon.tw {
+	background-image:url('../img/twitter.png');
+}
+
+.social_link .icon.gp {
+	background-image:url('../img/google-plus.png');
+}

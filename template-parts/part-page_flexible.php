@@ -31,6 +31,15 @@ while(have_rows('segments')):the_row();
 
 	<?php endif;
 
+	// Separator
+	if(get_row_layout() == "divider"):?>
+
+		<div style="height:<?php the_sub_field('height');?>px">
+
+		</div>
+
+	<?php endif;
+
 	// Galeria
 	if(get_row_layout() == "gallery"):?>
 
@@ -40,9 +49,9 @@ while(have_rows('segments')):the_row();
 				<?php $gallery = get_sub_field('gallery');
 				foreach($gallery as $img):?>
 
-				<div class="tile>">
+				<div class="tile">
 					<a class="image" href="<?php echo $img['url'];?>">
-						<img src="<?php echo $img['sizes']['thumbnail'];?>">
+						<img class="safe" src="<?php echo $img['sizes']['gallery_item_medium'];?>">
 					</a>
 				</div>
 
@@ -50,6 +59,13 @@ while(have_rows('segments')):the_row();
 
 			</div>
 		</div>
+
+	<?php endif;
+
+	// Theme part
+	if(get_row_layout() == "theme_part"):?>
+
+		<?php include locate_template("/template-parts/").get_sub_field('name');?>	
 
 	<?php endif;
 

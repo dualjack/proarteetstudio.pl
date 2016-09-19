@@ -86,7 +86,8 @@ add_action( 'after_setup_theme', 'post_settings' );
 // ==============================
 
 add_image_size('banner', 900, 500, array( 'center', 'center' ));                    //  obraz slajdu
-add_image_size('post_banner', 1440, 400, array( 'center', 'center' ));				//	obraz bannera postu
+add_image_size('post_banner', 1440, 400, array( 'center', 'center' ));              //  obraz bannera postu
+add_image_size('gallery_item_medium', 320, 240, array( 'center', 'center' ));		//	galeria medium
 
 // ==============================
 // ADVANCED CUSTOM FIELDS
