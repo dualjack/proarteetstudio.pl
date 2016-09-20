@@ -96,7 +96,7 @@ menu > .wrapper > .logo {
 
 menu > .wrapper > .logo,
 menu > .wrapper > .logo * {
-	/*transition:all 500ms, color 300ms;*/
+	transition:all 500ms, color 300ms;
 }
 
 menu > .wrapper > .logo:hover {
