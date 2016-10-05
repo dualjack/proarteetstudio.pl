@@ -32,6 +32,8 @@ function enqueue_admin_styles(){
 function enqueue_scripts(){
 	wp_enqueue_script( 'jquery-3.0.0', get_template_directory_uri() . '/js/jquery-3.0.0.min.js', false );
     wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), $GLOBALS['version'], false );
+    wp_enqueue_script( 'maplace', get_template_directory_uri() . '/js/maplace.min.js', array(), $GLOBALS['version'], false );
+    wp_enqueue_script( 'google_maps', "https://maps.googleapis.com/maps/api/js?key=AIzaSyBvuWTnwmWgSY5kN6vDG5JXQt59kU3JiS4", array(), $GLOBALS['version'], false );
 }
 
 // ==============================
@@ -92,6 +94,15 @@ add_image_size('gallery_item_medium', 320, 240, array( 'center', 'center' ));		/
 // ==============================
 // ADVANCED CUSTOM FIELDS
 // ==============================
+
+function my_acf_google_map_api( $api ){
+    
+    $api['key'] = 'AIzaSyBvuWTnwmWgSY5kN6vDG5JXQt59kU3JiS4';
+    return $api;
+    
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
 // ==============================
 // PODS
