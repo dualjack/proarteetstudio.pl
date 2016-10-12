@@ -2,7 +2,7 @@
 while(have_rows('segments')):the_row();
 
 	// Styl dla HTML w skrócie
-	if(get_sub_field('background_color') && get_sub_field('text_color')){
+	if(get_sub_field('background_color') || get_sub_field('text_color')){
 
 		$style = 	"background-color:".get_sub_field('background_color').";".
 					"color:".get_sub_field('text_color').";";

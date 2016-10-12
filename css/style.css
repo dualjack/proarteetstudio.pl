@@ -204,6 +204,7 @@ footer > .wrapper {
 footer > .wrapper > .tile {
 	padding:20px;
 	margin:20px 30px;
+	overflow:hidden;
 }
 
 footer > .wrapper > .tile p {
@@ -241,7 +242,7 @@ footer > .wrapper > .tile p {
 .frontpage_seg_1 > .wrapper > .left > .tile {
 	flex-grow:1;
 	display:flex;
-	justify-content:flex-start;
+	justify-content:center;
 	padding:20px;
 	background:#0a0a0a;
 }

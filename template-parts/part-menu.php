@@ -26,7 +26,7 @@
 		<div class="social">
 			
 			<a href="mailto:monika.maziarz75@gmail.com" class="icon mail"></a>
-			<a href="https://www.facebook.com/monika.maziarz75" class="icon fb" target="_blank"></a>
+			<a href="https://www.facebook.com/proarteetstudio/" class="icon fb" target="_blank"></a>
 
 		</div>
 

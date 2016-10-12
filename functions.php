@@ -77,7 +77,7 @@ add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
 
 function post_settings(){
 
-    add_theme_support( 'post-thumbnails', array( 'post' ) );          // Posts only
+    add_theme_support( 'post-thumbnails', array( 'post','page' ) );
     
 }
 
