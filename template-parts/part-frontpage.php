@@ -43,10 +43,10 @@
 			<?php while(have_rows('seg_2_logos')):the_row();?>
 
 			<div class="tile">
-				<a href="<?php the_sub_field('url');?>">
+				<a href="<?php the_sub_field('url');?>" target="_blank">
 
 					<?php $img = get_sub_field('logo');?>
-					<img class="safe" src="<?php echo $img['sizes']['thumbnail'];?>">
+					<img class="safe" src="<?php echo $img['sizes']['medium'];?>">
 
 				</a>
 			</div>
