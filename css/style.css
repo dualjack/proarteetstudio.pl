@@ -136,20 +136,23 @@ menu > .wrapper > ul.main_menu {
 }
 
 menu > .wrapper > ul.main_menu li {
-	padding:10px 30px;
+	padding:10px;
 }
 
 menu > .wrapper > ul.main_menu li > a {
 	display:block;
 	font-size:14px;
 	color:#3D3D3D;
-	border-bottom:1px solid transparent;
+	border:1px solid #3D3D3D;
 	transition:all 500ms;
 	font-weight:400;
+	padding:10px 30px;
 }
 
 menu > .wrapper > ul.main_menu li > a:hover {
-	color:#6AB072;
+	background-color:#FE3404;
+	color:white;
+	border:1px solid transparent;
 }
 
 
